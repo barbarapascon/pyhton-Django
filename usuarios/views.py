@@ -1,4 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 def cadastro(request):
-    return HttpResponse('Ola mundi')
+    print(request.META)
+    return render(request,'cadastro.html')
